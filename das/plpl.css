@@ -1,23 +1,43 @@
 body {background-color: #0000;}
-body {margin:0;}
+body {margin:0;
+
+font-family: 'merrieweather', 'Arial Narrow', Arial, sans-serif;
+}
+
+@font-face {
+    font-family: merrieweather;
+    src: url(fonts/Merrieweather-Regular.ttf);
+ }
+
+ .nav-logo {
+     padding-left: 100px;
+     position: absolute;
+     z-index: 12;
+     color: #FFF;
+     margin: 0;
+     
+ }
  ul {
     list-style-type: none;
-    margin: 0;
+    margin: 0 70px;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
-    position: fixed;
+    background-color: transparent;
+    position: absolute;
+    right: 0;
     top: 0;
-    width: 100%;
 }
 
 li {
+    right: 0;
+    padding-right: 20px;
     float: left;
 }
 
 li a {
     display: block;
-    color: white;
+    font-weight: 700;
+    color: #FFF;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -45,10 +65,23 @@ p {
  border: 6px;
 }
 
-/*img {
-    width: 30%;
-    height: 30%;
-  } */
+.fota{
+    margin: 0 auto;
+}
+
+.background{
+    width: 100%;
+    height: 100vh;
+}
+
+.arrow{
+    top: 90vh;
+    position: absolute;
+    left:  45vw;
+    width: 40px;
+    height: 40px;
+
+}
 
 
   #img1{
