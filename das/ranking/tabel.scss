@@ -1,0 +1,46 @@
+.ranking {    
+    &-Nav {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        position: fixed;
+        top: 0;
+        width: 100%;
+
+        &-Flap {
+            float: left;
+    
+            li {
+                a {
+                    display: block;
+                    color: white;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+
+                    &:hover:not(.active) {
+                        background-color: #111;
+                    }
+                    
+                    .active {
+                        background-color: #4CAF50;
+                    }
+                }
+            }
+        }    
+    }
+
+    &-Table {
+        width: auto;
+        
+         tr {
+            background-color: grey;
+        
+            th, td {
+                padding: 7px 10px 10px 10px;
+            }
+        }
+    }
+}
